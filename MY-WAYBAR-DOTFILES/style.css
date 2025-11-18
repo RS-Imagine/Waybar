@@ -55,8 +55,9 @@ window#waybar {
 }
 
 #clock {
-  color: #000000;
-  font-weight: bold;
+  color: @foreground;
+  font-size: 18px;
+  font-weight: Bold;
 }
 
 #mpris {
@@ -99,12 +100,14 @@ window#waybar {
 
 tooltip {
   background: @background;
-  border: 1px solid @foreground;
+  border: 2px dashed @foreground;
 }
 tooltip * {
   color: @foreground;
   margin: 1px;
   background: @background;
+  text-shadow: none;
+  font-weight: bold;
 }
 
 #pulseaudio-slider,
